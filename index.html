@@ -5,85 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISPC Conference Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <!-- Including Font Awesome for icons -->
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts (for modern typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-50 p-8">
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-poppins">
 
-    <header class="text-center mb-16">
-        <h1 class="text-4xl font-bold text-gray-800">ISPC Conferences</h1>
-        <p class="mt-2 text-lg text-gray-600">Inspiring minds. Connecting professionals. Advancing knowledge.</p>
-        <button class="mt-6 px-6 py-3 text-lg bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none">Explore Conferences</button>
+    <!-- Header Section with Hero Image -->
+    <header class="text-center py-20 bg-opacity-80 bg-black">
+        <h1 class="text-5xl font-bold mb-4">ISPC Conferences</h1>
+        <p class="text-lg mb-6">Inspiring minds. Connecting professionals. Advancing knowledge.</p>
+        <button class="px-8 py-4 bg-blue-600 rounded-full text-xl hover:bg-blue-800 transition-all">Explore Conferences</button>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <!-- Card for Upcoming Events -->
-        <div class="card hover:shadow-xl transition-shadow duration-300">
-            <div class="card-content text-center p-6">
-                <i class="fas fa-calendar-day mx-auto mb-4 h-12 w-12 text-blue-600"></i>
-                <h2 class="text-xl font-semibold text-gray-800">Upcoming Events</h2>
-                <p class="mt-2 text-gray-600">View the calendar of international scientific and professional conferences.</p>
+    <!-- Event Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-10">
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-calendar-day text-4xl mb-4 text-blue-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Upcoming Events</h2>
+                <p>Stay updated with international scientific and professional conferences.</p>
+                <button class="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all">View Calendar</button>
             </div>
         </div>
 
-        <!-- Card for Speakers & Topics -->
-        <div class="card hover:shadow-xl transition-shadow duration-300">
-            <div class="card-content text-center p-6">
-                <i class="fas fa-user mx-auto mb-4 h-12 w-12 text-green-600"></i>
-                <h2 class="text-xl font-semibold text-gray-800">Speakers & Topics</h2>
-                <p class="mt-2 text-gray-600">Discover keynotes and panel discussions led by leading experts.</p>
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-user text-4xl mb-4 text-green-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Speakers & Topics</h2>
+                <p>Learn from keynotes and panel discussions led by renowned experts.</p>
+                <button class="mt-4 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all">Discover Speakers</button>
             </div>
         </div>
 
-        <!-- Card for Live & Recorded -->
-        <div class="card hover:shadow-xl transition-shadow duration-300">
-            <div class="card-content text-center p-6">
-                <i class="fas fa-video mx-auto mb-4 h-12 w-12 text-purple-600"></i>
-                <h2 class="text-xl font-semibold text-gray-800">Live & Recorded</h2>
-                <p class="mt-2 text-gray-600">Access live sessions or rewatch past conference highlights anytime.</p>
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-video text-4xl mb-4 text-purple-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Live & Recorded</h2>
+                <p>Access live sessions or rewatch conference highlights anytime.</p>
+                <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">Watch Now</button>
             </div>
         </div>
     </div>
 
-    <section class="mb-16">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Paper Submission</h2>
-        <p class="text-gray-600 mb-4">
-            Submit your research papers for upcoming ISPC conferences. Accepted papers will be presented during sessions and published in our digital proceedings.
-        </p>
-        <button class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none">Submit Paper</button>
-    </section>
-
-    <section>
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Previous Conferences</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Card for ISPC 2021 -->
-            <div class="card hover:shadow-xl transition-shadow duration-300">
-                <div class="card-content p-6">
-                    <div class="flex items-center mb-2">
-                        <i class="fas fa-video mr-2 text-purple-600"></i>
-                        <h3 class="text-xl font-medium text-gray-800">ISPC 2021</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Watch recordings and download conference documents for ISPC 2021.</p>
-                    <button class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-md hover:bg-purple-100 focus:outline-none">View ISPC 2021</button>
-                </div>
-            </div>
-
-            <!-- Card for ISPC 2022 -->
-            <div class="card hover:shadow-xl transition-shadow duration-300">
-                <div class="card-content p-6">
-                    <div class="flex items-center mb-2">
-                        <i class="fas fa-video mr-2 text-purple-600"></i>
-                        <h3 class="text-xl font-medium text-gray-800">ISPC 2022</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Watch recordings and download conference documents for ISPC 2022.</p>
-                    <button class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-md hover:bg-purple-100 focus:outline-none">View ISPC 2022</button>
-                </div>
-            </div>
-
-            <!-- Repeat for other years (ISPC 2023, ISPC 2024) -->
+    <!-- Paper Submission Section -->
+    <section class="bg-white text-gray-800 py-12 mb-12">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold mb-4">Submit Your Paper</h2>
+            <p class="text-lg mb-6">Present your research at the ISPC conference. Submit your paper for consideration today!</p>
+            <button class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all">Submit Paper</button>
         </div>
     </section>
 
+    <!-- Previous Conferences Section -->
+    <section class="py-12">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Previous Conferences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-10">
+            <div class="card bg-white text-gray-800 rounded-xl shadow-xl hover:scale-105 transform transition duration-500">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-2xl font-medium">ISPC 2021</h3>
+                    </div>
+                    <p>Watch recordings and access documents from the ISPC 2021 conference.</p>
+                    <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">View ISPC 2021</button>
+                </div>
+            </div>
+
+            <div class="card bg-white text-gray-800 rounded-xl shadow-xl hover:scale-105 transform transition duration-500">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-2xl font-medium">ISPC 2022</h3>
+                    </div>
+                    <p>Watch recordings and access documents from the ISPC 2022 conference.</p>
+                    <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">View ISPC 2022</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with Contact Information -->
+    <footer class="bg-black text-white py-6 text-center">
+        <p>&copy; 2025 ISPC Conference. All rights reserved. | <a href="mailto:info@ispc.org" class="text-blue-400">Contact Us</a></p>
+    </footer>
+
 </body>
 </html>
+
 
