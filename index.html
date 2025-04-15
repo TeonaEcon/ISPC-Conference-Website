@@ -4,24 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISPC Conference Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here if you have one -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <!-- You can include a CDN for icon fonts like Font Awesome or Lucide icons if you need -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Welcome to the ISPC Conference!</h1>
+<body class="bg-gray-50 p-8">
+
+    <header class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-800">ISPC Conferences</h1>
+        <p class="mt-2 text-lg text-gray-600">Inspiring minds. Connecting professionals. Advancing knowledge.</p>
+        <button class="mt-6 px-6 py-3 text-lg bg-blue-600 text-white rounded-md">Explore Conferences</button>
     </header>
 
-    <main>
-        <section>
-            <h2>About the Conference</h2>
-            <p>This is the official website for the ISPC Conference.</p>
-        </section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div class="card">
+            <div class="card-content text-center p-6">
+                <i class="fas fa-calendar-day mx-auto mb-4 h-10 w-10 text-blue-600"></i>
+                <h2 class="text-xl font-semibold">Upcoming Events</h2>
+                <p class="mt-2 text-gray-600">View the calendar of international scientific and professional conferences.</p>
+            </div>
+        </div>
 
-        <!-- Add other sections or content as needed -->
-    </main>
+        <div class="card">
+            <div class="card-content text-center p-6">
+                <i class="fas fa-user mx-auto mb-4 h-10 w-10 text-green-600"></i>
+                <h2 class="text-xl font-semibold">Speakers & Topics</h2>
+                <p class="mt-2 text-gray-600">Discover keynotes and panel discussions led by leading experts.</p>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 ISPC Conference. All rights reserved.</p>
-    </footer>
+        <div class="card">
+            <div class="card-content text-center p-6">
+                <i class="fas fa-video mx-auto mb-4 h-10 w-10 text-purple-600"></i>
+                <h2 class="text-xl font-semibold">Live & Recorded</h2>
+                <p class="mt-2 text-gray-600">Access live sessions or rewatch past conference highlights anytime.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Paper Submission</h2>
+        <p class="text-gray-600 mb-4">
+            Submit your research papers for upcoming ISPC conferences. Accepted papers will be presented during sessions and published in our digital proceedings.
+        </p>
+        <button class="px-6 py-3 bg-blue-600 text-white rounded-md">Submit Paper</button>
+    </section>
+
+    <section>
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Previous Conferences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-xl font-medium">ISPC 2021</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Watch recordings and download conference documents for ISPC 2021.</p>
+                    <button class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-md">View ISPC 2021</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-xl font-medium">ISPC 2022</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Watch recordings and download conference documents for ISPC 2022.</p>
+                    <button class="px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-md">View ISPC 2022</button>
+                </div>
+            </div>
+
+            <!-- Repeat for other years (ISPC 2023, ISPC 2024) -->
+        </div>
+    </section>
+
 </body>
 </html>
