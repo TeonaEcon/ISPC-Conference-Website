@@ -88,7 +88,7 @@
       color: #d32f2f;
       text-shadow: 0 0 10px #d32f2f;
     }
-    .card h2, .card h3 {
+    .card h2 {
       font-weight: 700;
       font-size: 1.75rem;
       margin-bottom: 0.7rem;
@@ -267,7 +267,7 @@
       <i class="fas fa-calendar-day"></i>
       <h2>Upcoming Events</h2>
       <p>Stay updated with international scientific and professional conferences.</p>
-      <button>View Calendar</button>
+      <button onclick="window.location.href='ISPC2025.html'">ISPC 2025</button>
     </div>
 
     <div class="card">
@@ -281,5 +281,50 @@
       <i class="fas fa-video"></i>
       <h2>Live & Recorded</h2>
       <p>Access live sessions or rewatch conference highlights anytime.</p>
-     
+      <button>Watch Now</button>
+    </div>
+  </div>
 
+  <!-- Paper Submission Section -->
+  <section class="paper-submission">
+    <h2>Submit Your Paper</h2>
+    <p>
+      Present your research at the ISPC conference. Submit your paper for
+      consideration today!
+    </p>
+    <button>Submit Paper</button>
+  </section>
+
+  <!-- Previous Conferences Section -->
+  <section class="previous-conferences">
+    <h2>Previous Conferences</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="card">
+        <div class="flex items-center mb-2">
+          <i class="fas fa-video"></i>
+          <h3>ISPC 2021</h3>
+        </div>
+        <p>Watch recordings and access documents from the ISPC 2021 conference.</p>
+        <button>View ISPC 2021</button>
+      </div>
+
+      <div class="card">
+        <div class="flex items-center mb-2">
+          <i class="fas fa-video"></i>
+          <h3>ISPC 2022</h3>
+        </div>
+        <p>Watch recordings and access documents from the ISPC 2022 conference.</p>
+        <button>View ISPC 2022</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section with Contact Information -->
+  <footer>
+    <p>
+      &copy; 2025 ISPC Conference. All rights reserved. |
+      <a href="mailto:info@ispc.org">Contact Us</a>
+    </p>
+  </footer>
+</body>
+</html>
