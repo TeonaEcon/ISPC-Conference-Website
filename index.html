@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ISPC 2025 - Documents</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(90deg, #283593, #d32f2f);
-      color: white;
-      margin: 0;
-      padding: 2rem;
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    a.download-link {
-      display: inline-block;
-      background: white;
-      color: #283593;
-      font-weight: 600;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      margin: 1rem 0;
-      box-shadow: 0 6px 12px rgba(40, 53, 147, 0.4);
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-    a.download-link:hover {
-      background: #d32f2f;
-      color: white;
-      box-shadow: 0 8px 20px rgba(211, 47, 47, 0.7);
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ISPC Conference Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts (for modern typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      .button-link {
+        display: inline-block;
+        background: linear-gradient(45deg, #283593, #d32f2f);
+        color: white;
+        font-weight: 600;
+        padding: 0.7rem 2.5rem;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        box-shadow: 0 6px 15px rgba(40, 53, 147, 0.5);
+        transition: all 0.4s ease;
+      }
+      .button-link:hover {
+        background: linear-gradient(45deg, #d32f2f, #283593);
+        box-shadow: 0 10px 25px rgba(211, 47, 47, 0.7);
+        transform: scale(1.05);
+      }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>ISPC 2025 Conference Documents</h1>
-    <p>Download the official documents related to ISPC 2025 below.</p>
-  </header>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-poppins">
 
-  <main>
-    <section>
-      <h2>Call for Papers</h2>
-      <a href="documents/call-for-papers.docx" class="download-link" download>
-        📄 Download Call for Papers (Word Document)
-      </a>
+    <!-- Header Section with Hero Image -->
+    <header class="text-center py-20 bg-opacity-80 bg-black">
+        <h1 class="text-5xl font-bold mb-4">ISPC Conferences</h1>
+        <p class="text-lg mb-6">Inspiring minds. Connecting professionals. Advancing knowledge.</p>
+        <button class="px-8 py-4 bg-blue-600 rounded-full text-xl hover:bg-blue-800 transition-all">Explore Conferences</button>
+    </header>
+
+    <!-- Event Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 p-10">
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-calendar-day text-4xl mb-4 text-blue-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Upcoming Events</h2>
+                <p>Stay updated with international scientific and professional conferences.</p>
+                <!-- Changed button to anchor tag linking to ISPC 2025 -->
+                <a href="ispc2025.html" class="button-link">ISPC 2025</a>
+            </div>
+        </div>
+
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-user text-4xl mb-4 text-green-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Speakers & Topics</h2>
+                <p>Learn from keynotes and panel discussions led by renowned experts.</p>
+                <button class="mt-4 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all">Discover Speakers</button>
+            </div>
+        </div>
+
+        <div class="card bg-white text-gray-800 rounded-xl shadow-xl transform hover:scale-105 transition duration-500">
+            <div class="card-content p-6 text-center">
+                <i class="fas fa-video text-4xl mb-4 text-purple-600"></i>
+                <h2 class="text-2xl font-semibold mb-2">Live & Recorded</h2>
+                <p>Access live sessions or rewatch conference highlights anytime.</p>
+                <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">Watch Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paper Submission Section -->
+    <section class="bg-white text-gray-800 py-12 mb-12">
+        <div class="text-center">
+            <h2 class="text-3xl font-semibold mb-4">Submit Your Paper</h2>
+            <p class="text-lg mb-6">Present your research at the ISPC conference. Submit your paper for consideration today!</p>
+            <button class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all">Submit Paper</button>
+        </div>
     </section>
-    
-    <!-- You can add more documents here -->
-    <!-- Example:
-    <section>
-      <h2>Conference Schedule</h2>
-      <a href="documents/conference-schedule.pdf" class="download-link" download>
-        📅 Download Conference Schedule (PDF)
-      </a>
+
+    <!-- Previous Conferences Section -->
+    <section class="py-12">
+        <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Previous Conferences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 px-10">
+            <div class="card bg-white text-gray-800 rounded-xl shadow-xl hover:scale-105 transform transition duration-500">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-2xl font-medium">ISPC 2021</h3>
+                    </div>
+                    <p>Watch recordings and access documents from the ISPC 2021 conference.</p>
+                    <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">View ISPC 2021</button>
+                </div>
+            </div>
+
+            <div class="card bg-white text-gray-800 rounded-xl shadow-xl hover:scale-105 transform transition duration-500">
+                <div class="card-content p-6">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-video mr-2 text-purple-600"></i>
+                        <h3 class="text-2xl font-medium">ISPC 2022</h3>
+                    </div>
+                    <p>Watch recordings and access documents from the ISPC 2022 conference.</p>
+                    <button class="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all">View ISPC 2022</button>
+                </div>
+            </div>
+        </div>
     </section>
-    -->
-  </main>
+
+    <!-- Footer Section with Contact Information -->
+    <footer class="bg-black text-white py-6 text-center">
+        <p>&copy; 2025 ISPC Conference. All rights reserved. | <a href="mailto:info@ispc.org" class="text-blue-400">Contact Us</a></p>
+    </footer>
+
 </body>
 </html>
 
