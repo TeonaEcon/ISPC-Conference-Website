@@ -286,14 +286,17 @@
   </div>
 
   <!-- Paper Submission Section -->
-  <section class="paper-submission">
-    <h2>Submit Your Paper</h2>
-    <p>
-      Present your research at the ISPC conference. Submit your paper for
-      consideration today!
-    </p>
-    <button>Submit Paper</button>
-  </section>
+   <section class="paper-submission">
+     <h2>Submit Your Paper</h2>
+     <p>
+       Present your research at the ISPC conference. Submit your paper for consideration today!
+     </p>
+  
+     <form action="YOUR_BACKEND_ENDPOINT" method="POST" enctype="multipart/form-data">
+       <input type="file" name="paper" accept=".pdf,.doc,.docx" required />
+       <button type="submit">Submit Paper</button>
+     </form>
+   </section>
 
   <!-- Previous Conferences Section -->
   <section class="previous-conferences">
