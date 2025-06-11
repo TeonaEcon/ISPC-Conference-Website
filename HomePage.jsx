@@ -67,8 +67,8 @@ export default function HomePage() {
           {[1, 2, 3].map((i) => (
             <div key={i} className="rounded-xl bg-blue-100 p-6 shadow hover:shadow-lg transition hover:scale-105">
               <Mic className="mx-auto h-12 w-12 text-[#4169E1] mb-4" />
-              <h3 className="text-xl font-medium text-gray-800">Dr. Jane Smith</h3>
-              <p className="text-sm text-gray-600 mt-2">AI Ethics, Stanford University</p>
+              <h3 className="text-xl font-medium text-gray-800">Prof. Dr. Richard Geibel</h3>
+              <p className="text-sm text-gray-600 mt-2">Socialmedia developments, IU International University, E-commerce Institute Cologne, Germany</p>
             </div>
           ))}
         </div>
