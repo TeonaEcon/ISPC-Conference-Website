@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ispc-conference-website.vercel.app/sitemap.xml
